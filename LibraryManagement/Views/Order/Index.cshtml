@@ -1,0 +1,46 @@
+﻿@section PageCss {
+    <link href="~/Assets/Libs/DataTables/css/semantic.min.css" rel="stylesheet" />
+    <link href="~/Assets/Libs/DataTables/css/dataTables.semanticui.css" rel="stylesheet" />
+}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Phiếu mượn /</span> Danh sách</h4>
+
+    <!-- Basic Bootstrap Table -->
+    <div class="">
+        <table id="tbIndex" class="ui celled table" style="width:100%">
+            <thead>
+                <tr>
+                    <th rowspan="2">#</th>
+                    <th rowspan="2">Mã phiếu</th>
+                    <th rowspan="2">Trạng thái</th>
+                    <th rowspan="2">Ngày mượn</th>
+                    <th rowspan="2">Ngày phải trả</th>
+                    <th rowspan="2">Ngày trả thực</th>
+                    <th rowspan="2">Số lượng</th>
+                    <th colspan="2">Độc giả</th>
+                    <th colspan="2">Sách</th>
+                </tr>
+                <tr>
+                    <th>Mã định danh</th>
+                    <th>Họ tên</th>
+                    <th>Mã sách</th>
+                    <th>Tên sách</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!--/ Basic Bootstrap Table -->
+</div>
+
+@section PageJs {
+    <script src="~/Assets/Libs/DataTables/js/semantic.min.js"></script>
+    <script src="~/Assets/Libs/DataTables/js/jquery.dataTables.min.js"></script>
+    <script src="~/Assets/Libs/DataTables/js/dataTables.buttons.min.js"></script>
+    <script src="~/Assets/Libs/DataTables/js/dataTables.semanticui.min.js"></script>
+    <script src="~/Assets/Libs/DataTables/js/buttons.semanticui.min.js"></script>
+    <script src="~/Assets/Libs/moment.js"></script>
+    <script src="~/Assets/Scripts/Order/Index.js"></script>
+}
